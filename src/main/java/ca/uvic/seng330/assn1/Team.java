@@ -40,7 +40,7 @@ public class Team implements Comparable<Team>
 	 * Use ArrayList method (.add) to add players to the team
 	 * @param aPlayer
 	 */
-	private void addPlayers(Player aPlayer)
+	public void addPlayer(Player aPlayer)
 	{
 		aTeam.add(aPlayer);
 	}
