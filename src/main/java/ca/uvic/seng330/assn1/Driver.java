@@ -1,5 +1,12 @@
 package ca.uvic.seng330.assn1;
 
+import ca.uvic.seng330.assn1.Player.Position;
+
+import java.util.Iterator;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Collections;
+
 /**
  * Entry point.
  * 
@@ -8,14 +15,28 @@ package ca.uvic.seng330.assn1;
 public final class Driver {
 
 
-  /**
-   * Main method.
-   */
-  public static void main(String[] args) {
-    //there is nothing here ... but you might 
-	// use this for simple testing on the console.
-	  //Team t = new Team(...);
-    // Print everything.
-    //System.out.println(team);
-  }
+    /**
+     * Main method.
+     */
+	public static void main(String[] args) {
+		//there is nothing here ... but you might 
+		// use this for simple testing on the console.
+//		Team t = new Team(...);
+		// Print everything.
+//		System.out.println(team);
+		
+		// Creating a single player
+		Position one = Position.CENTRE;
+		Player playerOne = new Player("Max", 123, Position.GOALIE);
+//		System.out.println(playerOne.getPosition());
+		
+		// Creating a team
+//		Team bTeam = new Team("Oilers");
+		Team bTeam = new Team();
+		bTeam.teamName();
+
+
+		
+	  
+	}
 }

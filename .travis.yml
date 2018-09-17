@@ -1,1 +1,9 @@
+sudo: false
 language: java
+
+before_install:
+  - curl -f -OL http://webhome.cs.uvic.ca/~nernst/InstructorTest.java  
+  - mv InstructorTest.java $TRAVIS_BUILD_DIR/src/test/java/ca/uvic/seng330/assn1/
+
+script:
+  - gradle test 
