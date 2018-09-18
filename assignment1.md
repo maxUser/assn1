@@ -38,7 +38,7 @@ In addition, add methods to create a Player, and add a `getPoints` and `getName`
 2. Implement the class called Team that will use the `Player` type to maintain a list of players. Use a [generic/parameterized type](https://docs.oracle.com/javase/tutorial/java/generics/types.html) type `List` to hold the players. Teams should store the number of players, and have a name (e.g. Canucks, Penguins ...) 
 
 # Part 2 /10 marks
-Using JetUML, create a UML Object diagram to represent a `League` instance. Leagues have multiple Teams. For this diagram, assume your league object has 3 teams and each team has 4 players. **Only show the player objects for one team.** Submit your diagram by committing it to your assignment1 repo, in the JetUML "*.mdl" format and a PDF.  
+Using JetUML, create a UML Object diagram to represent a League instance. Leagues have multiple Teams. For this diagram, assume your league object has 3 teams and each team has 4 players. Only show the player objects for one team. Submit your diagram by committing it to your assignment1 repo, in the JetUML "*.jet" format and a PNG.
 
 # Part 3  /10 marks
 1. Implement a League object holding the teams, per the object diagram. Leagues should define a `sort` method that sorts teams by total points. 
@@ -47,5 +47,4 @@ Using JetUML, create a UML Object diagram to represent a `League` instance. Leag
     1. Use this comparator to sort the players in a Team according to points.  
 1. Override the `Object.toString()` method in order to print the following for a Team:
 
-`System.out.println(canucks)
-: Canucks have four points.`
+`System.out.println(canucks): Canucks have four points.`

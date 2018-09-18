@@ -1,7 +1,7 @@
 package ca.uvic.seng330.assn1;
 
 import java.util.ArrayList;
-import java.util.Collections;
+//import java.util.Collections;
 import java.util.List;
 //import java.util.stream.Stream;
 
@@ -19,18 +19,14 @@ public class Team implements Comparable<Team>
 	private List<Player> aTeam;
 	private String aTeamName;
 	
-	// Players for testing
-//	Player one = new Player("Mike", 322, Position.DEFENDER);
-//	Player two = new Player("Maxi", 123, Position.GOALIE);
-		
+	/**
+	 * Team constructor
+	 * @param pTeamName: String representation of the team name
+	 */
 	public Team(String pTeamName)
 	{
 		this.aTeamName = pTeamName;
 		aTeam = new ArrayList<Player>();
-//		addPlayers(one);
-//		addPlayers(two);
-		
-//		System.out.println(aTeam); // Prints out player on the team in an array [PlayerOne, PlayerTwo, ...]
 	}
 	
 	/**
@@ -40,6 +36,22 @@ public class Team implements Comparable<Team>
 	public void addPlayer(Player aPlayer)
 	{
 		aTeam.add(aPlayer);
+	}
+	
+	/**
+	 * Sums the points of all players and returns as integer
+	 * @return total points of all players
+	 */
+	public int getPoints()
+	{
+		int teamPoints = 0;
+		
+		for(Player aPlayer : aTeam)
+		{
+			teamPoints += aPlayer.getPoints();
+		}
+		
+		return teamPoints;
 	}
 
 	/**
@@ -66,7 +78,7 @@ public class Team implements Comparable<Team>
 	
 	public String toString()
 	{
-		return "NAME: " + aTeamName;
+		return "TEAM NAME: " + aTeamName;
 	}
 	
 

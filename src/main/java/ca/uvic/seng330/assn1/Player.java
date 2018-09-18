@@ -11,6 +11,12 @@ public class Player {
 	private Position aPosition;
 	
 	
+	/**
+	 * Player constructor
+	 * @param pName: String representation of the player name
+	 * @param pPoints: Points accumulated by player stored as integer
+	 * @param pPosition: Position of player on team stored as enumerated type
+	 */
 	public Player(String pName, int pPoints, Position pPosition)
 	{
 		this.aName = pName;
