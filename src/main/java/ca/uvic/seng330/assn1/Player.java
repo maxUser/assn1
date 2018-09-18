@@ -6,11 +6,6 @@ package ca.uvic.seng330.assn1;
  */
 public class Player {
 	
-	public enum Position
-	{
-		DEFENDER, WINGER, CENTRE, GOALIE
-	}
-	
 	private String aName;
 	private int aPoints; // goal or assist
 	private Position aPosition;

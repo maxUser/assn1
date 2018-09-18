@@ -27,7 +27,7 @@ public final class Driver {
 		
 		// Creating a single player
 		Position one = Position.CENTRE;
-		Player playerOne = new Player("Max", 123, Position.GOALIE);
+		Player playerOne = new Player("Max", 123, Position.GOALTENDER);
 //		System.out.println(playerOne.getPosition());
 		
 		// Creating a team

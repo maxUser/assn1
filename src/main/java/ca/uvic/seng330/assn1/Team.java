@@ -1,7 +1,5 @@
 package ca.uvic.seng330.assn1;
 
-import ca.uvic.seng330.assn1.Player.Position;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -22,16 +20,15 @@ public class Team implements Comparable<Team>
 	private String aTeamName;
 	
 	// Players for testing
-	Player one = new Player("Mike", 322, Position.DEFENDER);
-	Player two = new Player("Maxi", 123, Position.GOALIE);
+//	Player one = new Player("Mike", 322, Position.DEFENDER);
+//	Player two = new Player("Maxi", 123, Position.GOALIE);
 		
-	public Team(/*String pTeamName*/)
+	public Team(String pTeamName)
 	{
-//		this.aTeamName = pTeamName;
-		this.aTeamName = "Penguins";
+		this.aTeamName = pTeamName;
 		aTeam = new ArrayList<Player>();
-		addPlayers(one);
-		addPlayers(two);
+//		addPlayers(one);
+//		addPlayers(two);
 		
 //		System.out.println(aTeam); // Prints out player on the team in an array [PlayerOne, PlayerTwo, ...]
 	}
