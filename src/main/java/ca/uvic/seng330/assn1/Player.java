@@ -11,12 +11,6 @@ public class Player {
 	private Position aPosition;
 	
 	
-	/**
-	 * Player constructor
-	 * @param pName: String representation of the player name
-	 * @param pPoints: Points accumulated by player stored as integer
-	 * @param pPosition: Position of player on team stored as enumerated type
-	 */
 	public Player(String pName, int pPoints, Position pPosition)
 	{
 		this.aName = pName;
@@ -24,34 +18,25 @@ public class Player {
 		aPosition = pPosition;
 	}
 	
-	/**
-	 * @return Amount of points a player has accumulated as an integer
-	 */
+
 	public int getPoints()
 	{
 		return aPoints;
 	}
 	
-	/**
-	 * NOT REQUIRED
-	 * @return Position that the players takes on the ice as enum
-	 */
+
 	public Position getPosition()
 	{
 		return aPosition;
 	}
 	
-	/**
-	 * @return Name of the player as a string
-	 */
+
 	public String getName()
 	{
 		return aName;
 	}
 	
-	/**
-	 * @return String representation of Player object
-	 */
+
 	public String toString()
 	{
 		return "NAME: " + aName  + " POINTS: " + aPoints + " POSITION: " + aPosition;

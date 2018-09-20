@@ -1,6 +1,7 @@
 package ca.uvic.seng330.assn1;
 
 import java.util.ArrayList;
+//import java.util.Iterator;
 //import java.util.Collections;
 import java.util.List;
 //import java.util.stream.Stream;
@@ -19,20 +20,14 @@ public class Team implements Comparable<Team>
 	private List<Player> aTeam;
 	private String aTeamName;
 	
-	/**
-	 * Team constructor
-	 * @param pTeamName: String representation of the team name
-	 */
+
 	public Team(String pTeamName)
 	{
 		this.aTeamName = pTeamName;
 		aTeam = new ArrayList<Player>();
 	}
 	
-	/**
-	 * Use ArrayList method (.add) to add players to the team
-	 * @param aPlayer
-	 */
+
 	public void addPlayer(Player aPlayer)
 	{
 		aTeam.add(aPlayer);
@@ -51,6 +46,7 @@ public class Team implements Comparable<Team>
 			teamPoints += aPlayer.getPoints();
 		}
 		
+//		System.out.println(teamPoints);
 		return teamPoints;
 	}
 
@@ -78,7 +74,7 @@ public class Team implements Comparable<Team>
 	
 	public String toString()
 	{
-		return "TEAM NAME: " + aTeamName;
+		return aTeamName + " have " + this.getPoints() + " points";
 	}
 	
 
@@ -86,7 +82,19 @@ public class Team implements Comparable<Team>
 	public int compareTo(Team o) 
 	{
 		// TODO Auto-generated method stub
-		return 0;
+		if(this.getPoints() > o.getPoints())
+		{
+			return 1;
+		} 
+		else if(this.getPoints() > o.getPoints())
+		{
+			return -1;
+		}
+		else 
+		{
+			return 0;
+		}
 	}
+
 	
 }

@@ -37,7 +37,7 @@ public final class Driver {
 		bTeam.addPlayer(playerTwo);
 		bTeam.addPlayer(playerThree);
  
-		System.out.println(bTeam.getPoints());
+		System.out.println(bTeam);
 
 
 		
